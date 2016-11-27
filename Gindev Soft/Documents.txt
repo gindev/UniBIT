@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "Invoice",
+    "Number": "00001",
+    "IssueDate": "2016-11-27T00:00:00+02:00",
+    "Client": {
+      "Name": "Pesho OOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica",
+      "MOL": "Pesho Petrov",
+      "Bulstat": "123456789",
+      "DanNo": "BG123456789",
+      "Person": {
+        "Name": "Pesho Petrov",
+        "Signature": "dajzx76789xa",
+        "IsOperator": false
+      }
+    },
+    "Provider": {
+      "Name": "Panayot EOOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica 2",
+      "MOL": "Panayot Gindev",
+      "Bulstat": "200578935",
+      "DanNo": "BG200578935",
+      "Person": {
+        "Name": "Panayot Gindev",
+        "Signature": "das9obd8as8d9",
+        "IsOperator": true
+      }
+    },
+    "ProductsList": [
+      {
+        "ProductName": "Tuhla chetvorka",
+        "ProductQuantity": 1.0,
+        "ProductQuantityType": "br",
+        "ProductSinglePrice": 10.0
+      },
+      {
+        "ProductName": "Ciment",
+        "ProductQuantity": 3.0,
+        "ProductQuantityType": "kg",
+        "ProductSinglePrice": 25.0
+      }
+    ]
+  },
+  {
+    "Type": "Invoice",
+    "Number": "00002",
+    "IssueDate": "2016-11-27T00:00:00+02:00",
+    "Client": {
+      "Name": "Pesho OOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica",
+      "MOL": "Pesho Petrov",
+      "Bulstat": "123456789",
+      "DanNo": "BG123456789",
+      "Person": {
+        "Name": "Pesho Petrov",
+        "Signature": "dajzx76789xa",
+        "IsOperator": false
+      }
+    },
+    "Provider": {
+      "Name": "Panayot EOOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica 2",
+      "MOL": "Panayot Gindev",
+      "Bulstat": "200578935",
+      "DanNo": "BG200578935",
+      "Person": {
+        "Name": "Panayot Gindev",
+        "Signature": "das9obd8as8d9",
+        "IsOperator": true
+      }
+    },
+    "ProductsList": [
+      {
+        "ProductName": "Tuhla chetvorka",
+        "ProductQuantity": 7.0,
+        "ProductQuantityType": "br",
+        "ProductSinglePrice": 12.0
+      },
+      {
+        "ProductName": "Ciment",
+        "ProductQuantity": 6.0,
+        "ProductQuantityType": "kg",
+        "ProductSinglePrice": 150.0
+      }
+    ]
+  },
+  {
+    "Type": "Invoice",
+    "Number": "00003",
+    "IssueDate": "2016-11-27T00:00:00+02:00",
+    "Client": {
+      "Name": "Pesho OOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica",
+      "MOL": "Pesho Petrov",
+      "Bulstat": "123456789",
+      "DanNo": "BG123456789",
+      "Person": {
+        "Name": "Pesho Petrov",
+        "Signature": "dajzx76789xa",
+        "IsOperator": false
+      }
+    },
+    "Provider": {
+      "Name": "Panayot EOOD",
+      "Grad": "Sofia",
+      "Address": "Sveta Troica 2",
+      "MOL": "Panayot Gindev",
+      "Bulstat": "200578935",
+      "DanNo": "BG200578935",
+      "Person": {
+        "Name": "Panayot Gindev",
+        "Signature": "das9obd8as8d9",
+        "IsOperator": true
+      }
+    },
+    "ProductsList": [
+      {
+        "ProductName": "Tuhla chetvorka",
+        "ProductQuantity": 15.0,
+        "ProductQuantityType": "br",
+        "ProductSinglePrice": 10.0
+      },
+      {
+        "ProductName": "Ciment",
+        "ProductQuantity": 150.0,
+        "ProductQuantityType": "kg",
+        "ProductSinglePrice": 25.0
+      }
+    ]
+  }
+]

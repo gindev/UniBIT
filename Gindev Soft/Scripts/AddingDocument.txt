@@ -1,0 +1,63 @@
+//Document invoice = new Document()
+            //{
+            //    Type = "Invoice",
+            //    Number = "00001",
+            //    IssueDate = DateTime.Today,
+            //    Client = new Contragent()
+            //    {
+            //        Name = "Pesho OOD",
+            //        Address = "Sveta Troica",
+            //        Grad = "Sofia",
+            //        MOL = "Pesho Petrov",
+            //        DanNo = "BG123456789",
+            //        Bulstat = "123456789",
+            //        Person = new Person()
+            //        {
+            //            Name = "Pesho Petrov",
+            //            Signature = "dajzx76789xa",
+            //            IsOperator = false
+            //        }
+            //    },
+            //    Provider = new Contragent()
+            //    {
+            //        Name = "Panayot EOOD",
+            //        Address = "Sveta Troica 2",
+            //        Grad = "Sofia",
+            //        MOL = "Panayot Gindev",
+            //        DanNo = "BG200578935",
+            //        Bulstat = "200578935",
+            //        Person = new Person()
+            //        {
+            //            Name = "Panayot Gindev",
+            //            Signature = "das9obd8as8d9",
+            //            IsOperator = true
+            //        }
+            //    },
+            //    ProductsList = new HashSet<Product>()
+            //    {
+            //        new Product
+            //        {
+            //            ProductName = "Tuhla chetvorka",
+            //            ProductQuantity = 15,
+            //            ProductQuantityType = "br",
+            //            ProductSinglePrice = 10.0m
+            //        },
+            //        new Product
+            //        {
+            //            ProductName = "Ciment",
+            //            ProductQuantity = 150,
+            //            ProductQuantityType = "kg",
+            //            ProductSinglePrice = 25.0m
+            //        }
+            //    }
+            //};
+
+            //ListViewItem item = new ListViewItem()
+            //{
+            //    Text = invoice.Type,
+            //    Tag = invoice
+            //};
+            //item.SubItems.Add(invoice.Number);
+            //item.SubItems.Add(invoice.IssueDate.ToString());
+            //item.SubItems.Add("0");
+            //listView1.Items.Add(item);
