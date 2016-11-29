@@ -38,6 +38,7 @@
                 listView1.Items.Add(item);
             }
             
+
             // Write a list of documents
             List<Document> documents = new List<Document>();
             foreach (ListViewItem convertedItem in listView1.Items)
