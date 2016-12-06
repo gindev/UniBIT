@@ -43,6 +43,9 @@
 <<<<<<< HEAD
 =======
             
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
             // Write a list of documents
