@@ -40,6 +40,10 @@
                 item.SubItems.Add(foundDocument.Client.Name);
                 listView1.Items.Add(item);
             }
+<<<<<<< HEAD
+=======
+            
+>>>>>>> origin/master
 
             // Write a list of documents
             List<Document> documents = new List<Document>();

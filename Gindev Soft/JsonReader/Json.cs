@@ -2,8 +2,6 @@
 {
     using Newtonsoft.Json;
     using System.IO;
-    using Models;
-    using System.Collections.Generic;
 
     public class Json
     {
@@ -55,11 +53,5 @@
                     writer.Close();
             }
         }
-
-        // Write the list of salesman objects to file.
-        //WriteToJsonFile<List<Document>>("C:\salesmen.txt", salesmanList);
-
-        // Read the list of salesman objects from the file back into a variable.
-        //List<salesman> salesmanList = ReadFromJsonFile<List<salesman>>("C:\salesmen.txt");
     }
 }

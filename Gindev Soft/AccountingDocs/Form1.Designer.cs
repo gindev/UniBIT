@@ -49,7 +49,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+=======
+>>>>>>> origin/master
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -80,23 +83,37 @@
             // 
             // listView1
             // 
+<<<<<<< HEAD
             this.listView1.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+=======
+>>>>>>> origin/master
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
+<<<<<<< HEAD
             this.columnHeader4,
             this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(6, 6);
+=======
+            this.columnHeader4});
+            this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 6);
+            this.listView1.MultiSelect = false;
+>>>>>>> origin/master
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(893, 460);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+<<<<<<< HEAD
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+=======
+>>>>>>> origin/master
             // 
             // columnHeader1
             // 
@@ -229,11 +246,14 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+<<<<<<< HEAD
             // columnHeader5
             // 
             this.columnHeader5.DisplayIndex = 4;
             this.columnHeader5.Text = "Client";
             // 
+=======
+>>>>>>> origin/master
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
