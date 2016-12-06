@@ -49,7 +49,7 @@
     "Number": "00002",
     "IssueDate": "2016-11-27T00:00:00+02:00",
     "Client": {
-      "Name": "Pesho OOD",
+      "Name": "Gosho OOD",
       "Grad": "Sofia",
       "Address": "Sveta Troica",
       "MOL": "Pesho Petrov",
@@ -94,7 +94,7 @@
     "Number": "00003",
     "IssueDate": "2016-11-27T00:00:00+02:00",
     "Client": {
-      "Name": "Pesho OOD",
+      "Name": "Tosho OOD",
       "Grad": "Sofia",
       "Address": "Sveta Troica",
       "MOL": "Pesho Petrov",

@@ -11,6 +11,7 @@
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows.Forms;
+    using static System.Windows.Forms.ListView;
 
     public partial class Form1 : Form
     {
@@ -35,6 +36,7 @@
                     itemTotalSum += itemInInvoice.ProductSinglePrice * itemInInvoice.ProductQuantity;
                 }
                 item.SubItems.Add(itemTotalSum.ToString());
+                item.SubItems.Add(foundDocument.Client.Name);
                 listView1.Items.Add(item);
             }
             
@@ -61,6 +63,16 @@
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This application was made by Panayot Gindev as\na UniBIT VPE (Visual Programming Environments)\nproject. All rights reserved!", "Help -> About");
+        }
+
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            SelectedListViewItemCollection list = (sender as ListView).SelectedItems;
+            if (list.Count > 0)
+            {
+                Document item = (Document)list[0].Tag;
+                MessageBox.Show(item.Client.Name.ToString()); // TODO: open a new form with selected data
+            }
         }
     }
 }
