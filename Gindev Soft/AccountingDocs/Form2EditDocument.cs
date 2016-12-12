@@ -19,5 +19,10 @@ namespace AccountingDocs
             this.textBoxDocNumber.Text = document.Number;
             this.textBoxDocDate.Text = document.IssueDate.ToShortDateString();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,13 +39,13 @@
             this.labelReceivedBy = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBoxCustomer = new System.Windows.Forms.GroupBox();
-            this.labelCDName = new System.Windows.Forms.Label();
-            this.labelCDAddress = new System.Windows.Forms.Label();
-            this.labelCDCity = new System.Windows.Forms.Label();
-            this.labelCDMol = new System.Windows.Forms.Label();
-            this.labelCDBulstat = new System.Windows.Forms.Label();
-            this.labelCDDanNo = new System.Windows.Forms.Label();
             this.linkLabelCDEdit = new System.Windows.Forms.LinkLabel();
+            this.labelCDDanNo = new System.Windows.Forms.Label();
+            this.labelCDBulstat = new System.Windows.Forms.Label();
+            this.labelCDMol = new System.Windows.Forms.Label();
+            this.labelCDCity = new System.Windows.Forms.Label();
+            this.labelCDAddress = new System.Windows.Forms.Label();
+            this.labelCDName = new System.Windows.Forms.Label();
             this.groupBoxCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,10 +93,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Invoice",
+            "Receipt"});
             this.comboBox1.Location = new System.Drawing.Point(116, 62);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelClient
             // 
@@ -148,50 +152,15 @@
             this.groupBoxCustomer.TabStop = false;
             this.groupBoxCustomer.Text = "Customer details";
             // 
-            // labelCDName
+            // linkLabelCDEdit
             // 
-            this.labelCDName.AutoSize = true;
-            this.labelCDName.Location = new System.Drawing.Point(7, 26);
-            this.labelCDName.Name = "labelCDName";
-            this.labelCDName.Size = new System.Drawing.Size(38, 13);
-            this.labelCDName.TabIndex = 0;
-            this.labelCDName.Text = "Name:";
-            // 
-            // labelCDAddress
-            // 
-            this.labelCDAddress.AutoSize = true;
-            this.labelCDAddress.Location = new System.Drawing.Point(7, 76);
-            this.labelCDAddress.Name = "labelCDAddress";
-            this.labelCDAddress.Size = new System.Drawing.Size(48, 13);
-            this.labelCDAddress.TabIndex = 1;
-            this.labelCDAddress.Text = "Address:";
-            // 
-            // labelCDCity
-            // 
-            this.labelCDCity.AutoSize = true;
-            this.labelCDCity.Location = new System.Drawing.Point(7, 51);
-            this.labelCDCity.Name = "labelCDCity";
-            this.labelCDCity.Size = new System.Drawing.Size(27, 13);
-            this.labelCDCity.TabIndex = 2;
-            this.labelCDCity.Text = "City:";
-            // 
-            // labelCDMol
-            // 
-            this.labelCDMol.AutoSize = true;
-            this.labelCDMol.Location = new System.Drawing.Point(7, 101);
-            this.labelCDMol.Name = "labelCDMol";
-            this.labelCDMol.Size = new System.Drawing.Size(33, 13);
-            this.labelCDMol.TabIndex = 3;
-            this.labelCDMol.Text = "MOL:";
-            // 
-            // labelCDBulstat
-            // 
-            this.labelCDBulstat.AutoSize = true;
-            this.labelCDBulstat.Location = new System.Drawing.Point(7, 126);
-            this.labelCDBulstat.Name = "labelCDBulstat";
-            this.labelCDBulstat.Size = new System.Drawing.Size(42, 13);
-            this.labelCDBulstat.TabIndex = 4;
-            this.labelCDBulstat.Text = "Bulstat:";
+            this.linkLabelCDEdit.AutoSize = true;
+            this.linkLabelCDEdit.Location = new System.Drawing.Point(86, 183);
+            this.linkLabelCDEdit.Name = "linkLabelCDEdit";
+            this.linkLabelCDEdit.Size = new System.Drawing.Size(125, 13);
+            this.linkLabelCDEdit.TabIndex = 6;
+            this.linkLabelCDEdit.TabStop = true;
+            this.linkLabelCDEdit.Text = "Edit customer information";
             // 
             // labelCDDanNo
             // 
@@ -202,15 +171,50 @@
             this.labelCDDanNo.TabIndex = 5;
             this.labelCDDanNo.Text = "DanNo:";
             // 
-            // linkLabelCDEdit
+            // labelCDBulstat
             // 
-            this.linkLabelCDEdit.AutoSize = true;
-            this.linkLabelCDEdit.Location = new System.Drawing.Point(86, 183);
-            this.linkLabelCDEdit.Name = "linkLabelCDEdit";
-            this.linkLabelCDEdit.Size = new System.Drawing.Size(107, 13);
-            this.linkLabelCDEdit.TabIndex = 6;
-            this.linkLabelCDEdit.TabStop = true;
-            this.linkLabelCDEdit.Text = "Edit client information";
+            this.labelCDBulstat.AutoSize = true;
+            this.labelCDBulstat.Location = new System.Drawing.Point(7, 126);
+            this.labelCDBulstat.Name = "labelCDBulstat";
+            this.labelCDBulstat.Size = new System.Drawing.Size(42, 13);
+            this.labelCDBulstat.TabIndex = 4;
+            this.labelCDBulstat.Text = "Bulstat:";
+            // 
+            // labelCDMol
+            // 
+            this.labelCDMol.AutoSize = true;
+            this.labelCDMol.Location = new System.Drawing.Point(7, 101);
+            this.labelCDMol.Name = "labelCDMol";
+            this.labelCDMol.Size = new System.Drawing.Size(33, 13);
+            this.labelCDMol.TabIndex = 3;
+            this.labelCDMol.Text = "MOL:";
+            // 
+            // labelCDCity
+            // 
+            this.labelCDCity.AutoSize = true;
+            this.labelCDCity.Location = new System.Drawing.Point(7, 51);
+            this.labelCDCity.Name = "labelCDCity";
+            this.labelCDCity.Size = new System.Drawing.Size(27, 13);
+            this.labelCDCity.TabIndex = 2;
+            this.labelCDCity.Text = "City:";
+            // 
+            // labelCDAddress
+            // 
+            this.labelCDAddress.AutoSize = true;
+            this.labelCDAddress.Location = new System.Drawing.Point(7, 76);
+            this.labelCDAddress.Name = "labelCDAddress";
+            this.labelCDAddress.Size = new System.Drawing.Size(48, 13);
+            this.labelCDAddress.TabIndex = 1;
+            this.labelCDAddress.Text = "Address:";
+            // 
+            // labelCDName
+            // 
+            this.labelCDName.AutoSize = true;
+            this.labelCDName.Location = new System.Drawing.Point(7, 26);
+            this.labelCDName.Name = "labelCDName";
+            this.labelCDName.Size = new System.Drawing.Size(38, 13);
+            this.labelCDName.TabIndex = 0;
+            this.labelCDName.Text = "Name:";
             // 
             // Form2EditDocument
             // 
