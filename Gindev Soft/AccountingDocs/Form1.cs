@@ -15,12 +15,14 @@
 
     public partial class Form1 : Form
     {
+        public readonly List<Document> foundDocuments;
+
         public Form1()
         {
             InitializeComponent();
-
+            foundDocuments = Json.ReadFromJsonFile<List<Document>>("../../../Documents.txt");
             // Get a list of documents to show
-            List<Document> foundDocuments = Json.ReadFromJsonFile<List<Document>>("../../../Documents.txt");
+
             foreach (var foundDocument in foundDocuments)
             {
                 ListViewItem item = new ListViewItem()
@@ -29,7 +31,7 @@
                     Tag = foundDocument
                 };
                 item.SubItems.Add(foundDocument.Number);
-                item.SubItems.Add(foundDocument.IssueDate.ToString());
+                item.SubItems.Add(foundDocument.IssueDate.ToShortDateString());
                 decimal itemTotalSum = 0m;
                 foreach (var itemInInvoice in foundDocument.ProductsList)
                 {
@@ -39,11 +41,18 @@
                 item.SubItems.Add(foundDocument.Client.Name);
                 listView1.Items.Add(item);
             }
-            
 
-            // Write a list of documents
+            SaveDocuments(listView1);
+        }
+
+
+        /// <summary>
+        /// Saves all documents from a ListView item to the database used.
+        /// </summary>
+        private void SaveDocuments(ListView listview)
+        {
             List<Document> documents = new List<Document>();
-            foreach (ListViewItem convertedItem in listView1.Items)
+            foreach (ListViewItem convertedItem in listview.Items)
             {
                 documents.Add((Document)convertedItem.Tag);
             }
@@ -71,7 +80,8 @@
             if (list.Count > 0)
             {
                 Document item = (Document)list[0].Tag;
-                MessageBox.Show(item.Client.Name.ToString()); // TODO: open a new form with selected data
+                Form2EditDocument editForm = new Form2EditDocument(item);
+                editForm.Show();
             }
         }
     }
